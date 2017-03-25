@@ -4,10 +4,12 @@ header{
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	color: black;
 	padding: 12px 10px;
 	border: 2px solid #000;
 	background: #0f0;
-
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
 }
 
 .nav-pills > li > a{
@@ -68,7 +70,8 @@ header{
 .pagination > .active > span:hover, 
 .pagination > .active > a:focus, 
 .pagination > .active > span:focus {
-    color: #fff;
+	font-weight: bold;
+    color: black;
     background-color: #0f0;
     border: 2px solid #000;
 }
@@ -183,15 +186,17 @@ header{
 }
 
 .btn{
+	font-weight: bold;
+    color: black;
 	border: 1px solid black;
 	background: #0f0;
-	transition: 1s;
+	transition: .5s;
 }
 
 .btn:hover{
 	border: 1px solid black;
-	background: #00f;
-	transition: 1s;
+	background: #0a4710;
+	transition: .5s;
 }
 
 #articles .btn{

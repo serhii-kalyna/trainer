@@ -11,8 +11,11 @@ header{
 }
 
 .nav-pills > li > a:hover{
+	padding: 12px 10px;
 	background: #00f;
 	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
 }
 
 .nav-pills > li > a{
@@ -23,7 +26,7 @@ header{
 }
 
 #menu.default {
-    width:1349px;
+    width: 100%;
 }
 
 #menu.fixed {
@@ -37,14 +40,15 @@ header{
 }
 
 .nav-pills > li > a > .badge{
+	margin: 0 0 2px 7px;
 	border: 1px solid #000;
 	margin-left: 7px;
-	margin-bottom: 2px;
 }
 
 .nav{
 	background: #000;
-	margin-bottom: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 .nav li {
@@ -157,31 +161,23 @@ header{
 #articles{
 	display: inline-block;
 	float: left;
-
-	margin: 5px 10% 0 10%;
-
+	margin: 30px 10% 0 10%;
 	width: 80%;
-
-	padding-top: 10px;
-	padding-bottom: 10px;
-
+	padding: 0;
 	color: inherit;
 	background-color: #fff;
 }
 
-#articles .container-fluid{
-	border: 2px solid #91918f;
-	padding: 30px 0 0 0;
-}
-
 #articles article{
-	padding: 0 50px;
-	border-bottom: 2px solid #91918f;
+	padding: 30px 40px;
+	border: 2px solid #91918f;
+	margin-bottom: 20px; 
+	transition: 1s;
 }
 
-#articles article:last-child{
-	padding: 0 50px;
-	border-bottom: none;
+#articles article:hover{
+	box-shadow: 0 0 30px rgba(0,0,0,1);
+    transition: 1s;
 }
 
 .btn{
@@ -201,17 +197,19 @@ header{
 }
 
 #articles .img-art{
+	border: 2px solid #91918f;
 	display: block;
-	margin: 0 auto 40px auto;
+	margin: 0 auto;
 	transition: 1s;
 }
 
 #articles .img-art:hover{
 	/*border-radius: 50%;*/
 	/*filter: grayscale(100%);*/
+	border: 2px solid #91918f;
+	box-shadow: 0 0 30px rgba(0,0,0,1); 
 	filter: brightness(50%);
 	cursor: pointer;
-	box-shadow: 0 0 30px rgba(0,0,0,1);
     transition: 1s;
 }
 
@@ -292,22 +290,18 @@ header{
 
 
 /*---------------------CONTACTS page-------------*/
-#contact-body{
-	margin-right: auto;
-	margin-left: auto;
-}
 
-.contacts{
+#contact-body .contacts{
 	margin-top: 40px;
 } 
 
-.contacts img{
+#contact-body .contacts img{
 	border-radius: 20px;
-	margin-right: 20px;
+	margin: 10px;
 	transition: 1s;
 }
 
-.contacts img:hover{
+#contact-body .contacts img:hover{
 	box-shadow: 0 0 20px rgba(0,0,0,1);
     transition: 1s;
     filter: grayscale(100%);
@@ -369,6 +363,10 @@ p {margin: 0 0 10px;}
 	}
 }
 
+@media only screen and (max-width : 768px) {
+
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
@@ -377,8 +375,8 @@ p {margin: 0 0 10px;}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	#main-body .img-text h6 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+	    font-family: Arial, Helvetica, sans-serif;
+	    font-size: 30px;
 	}
 	#main-body .img-text a,
 	#main-body .img-text p {
@@ -390,8 +388,8 @@ p {margin: 0 0 10px;}
 @media only screen and (max-width : 768px) {
 
 	#main-body .img-text h6 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+	    font-family: Arial, Helvetica, sans-serif;
+	    font-size: 20px;
 	}
 
 	#main-body .img-text a,
@@ -405,9 +403,9 @@ p {margin: 0 0 10px;}
 @media only screen and (max-width : 480px) {
 
 	.nav > li > a {
-	  padding: 5px 5px;
-	  font-size: 10px;
-	  font-weight: bolder;
+		padding: 5px 5px;
+		font-size: 10px;
+		font-weight: bolder;
 	}
 
 	#footer {
@@ -415,17 +413,17 @@ p {margin: 0 0 10px;}
 	}
 
 	.pagination > li > a, .pagination > li > p {
-    font-size: 10px;
-    padding: 5px 7px;
+	    font-size: 10px;
+	    padding: 5px 7px;
 	}
 	h3,.h3{
 		font-size: 14px;
 		font-weight: bolder;
 	}
 	.nav-pills > li > a > .badge{
-	margin-left: 7px;
-	margin-bottom: 2px;
-	font-size: 8px;
+		margin-left: 7px;
+		margin-bottom: 2px;
+		font-size: 8px;
 	}
 
 	#main-body .img-text h6 {

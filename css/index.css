@@ -1,0 +1,425 @@
+/*======================HEADER====================*/
+header{
+	text-align: center;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	padding: 12px 10px;
+	border: 2px solid #000;
+	background: #0f0;
+
+}
+
+.nav-pills > li > a:hover{
+	background: #00f;
+	color: black;
+}
+
+.nav-pills > li > a{
+	margin: 0;
+	border-radius: 0;
+	padding: 12px 10px;
+	color: white;
+}
+
+#menu.default {
+    width:1349px;
+}
+
+#menu.fixed {
+	background: black;
+	opacity: .8;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 1030;
+}
+
+.nav-pills > li > a > .badge{
+	border: 1px solid #000;
+	margin-left: 7px;
+	margin-bottom: 2px;
+}
+
+.nav{
+	background: #000;
+	margin-bottom: 0px;
+}
+
+.nav li {
+	float: none;
+	display: inline-block;
+}
+
+.dropdown-menu li {
+	display: block;
+}
+
+.pagination > .active > a, 
+.pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > .active > span:focus {
+    color: #fff;
+    background-color: #0f0;
+    border: 2px solid #000;
+}
+
+.pagination > li > a, 
+.pagination > li > span {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #ddd;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover{
+	color: #000;
+	background-color: #00f; 
+}
+
+/*======================BODY====================*/
+
+/*---------------------MAIN page----------------*/
+
+#main-body {
+	text-align: center;
+	overflow: hidden;
+	padding-top: 20px;
+    display: block;   
+    position: relative;
+}
+
+#main-body .img-text {
+	text-align: center;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 36%;
+    height: auto;     
+    color: #fff;
+         
+    padding: 5px;
+    background-color: rgba(0,0,0,.3);  
+}
+
+#main-body .img-text h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+#main-body .img-text p {
+    font-size: 30px; 
+}
+
+#main-body .img-text a {
+	color: #f00;
+    font-size: 30px; 
+}
+
+#main-body .img-text a:hover {
+	text-decoration: underline;
+	color: #0f0;
+}
+
+#main-body .carousel-indicators {
+	top: 40px;
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	margin: 0;
+}
+
+#main-body .carousel-indicators li {
+	background: #fff;
+	border: 2px solid #f00;
+	width: 15px;
+	height: 15px;
+}
+
+#main-body .carousel-indicators li.active {
+	background: #0f0;
+	width: 20px;
+	height: 20px;
+}
+
+#main-body .carousel-indicators li:hover {
+	background: #00f;
+	width: 20px;
+	height: 20px;
+}
+
+/*---------------------/MAIN page----------------*/
+
+/*---------------------ARTICLES pages-------------*/
+#articles{
+	display: inline-block;
+	float: left;
+
+	margin: 5px 10% 0 10%;
+
+	width: 80%;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	color: inherit;
+	background-color: #fff;
+}
+
+.btn{
+	border: 1px solid black;
+	background: #0f0;
+	transition: 1s;
+}
+
+.btn:hover{
+	border: 1px solid black;
+	background: #00f;
+	transition: 1s;
+}
+
+#articles .btn{
+	margin-bottom: 20px;
+}
+
+#articles .img-art{
+	display: block;
+	margin: 0 auto;
+	transition: 1s;
+}
+
+#articles .img-art:hover{
+	/*border-radius: 50%;*/
+	/*filter: grayscale(100%);*/
+	filter: brightness(50%);
+	cursor: pointer;
+	box-shadow: 0 0 30px rgba(0,0,0,1);
+    transition: 1s;
+}
+
+#articles .img-modal{
+	display: block;
+	float: left;
+	width: 50%;
+	height: auto;
+	margin: 0 10px 10px 0;
+}
+
+#toTop {
+	width: 100px;
+	border: 1px solid #ccc;
+	background: #f7f7f7;
+	text-align: center;
+	padding: 5px;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	cursor: pointer;
+	display: none;
+	color: #333;
+	font-family: verdana;
+	font-size: 16px;
+}
+
+#toTop .glyphicon {
+	font-size: 16px;
+	padding-bottom: 0;
+}
+
+/*---------------------/ARTICLES pages-------------*/
+
+
+/*---------------------PHOTOS pages-------------*/
+
+.carousel.fade{
+	opacity: 1;
+}
+
+.carousel.fade .item{
+	opacity: 0;
+	transition: opacity 1s;
+	display: block;
+	position: absolute;
+}
+
+.carousel.fade .item.active{
+	opacity: 1;
+	position: relative;
+}
+
+/*---------------------/PHOTOS pages-------------*/
+
+/*---------------------VIDEOS page-------------*/
+#video-body{
+	text-align: center;
+}
+
+#video-body .row{
+	margin: 20px 0;
+}
+
+#video-body img{
+	transition: 1s;
+}
+
+#video-body img:hover{
+	filter: brightness(50%);
+	cursor: pointer;
+	box-shadow: 0 0 30px rgba(0,0,0,1);
+    transition: 1s;
+
+}
+
+/*---------------------/VIDEOS page-------------*/
+
+
+/*---------------------CONTACTS page-------------*/
+#contact-body{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contacts{
+	margin-top: 40px;
+} 
+
+.contacts img{
+	border-radius: 20px;
+	margin-right: 20px;
+	transition: 1s;
+}
+
+.contacts img:hover{
+	box-shadow: 0 0 20px rgba(0,0,0,1);
+    transition: 1s;
+    filter: grayscale(100%);
+    
+}
+
+/*---------------------/CONTACTS page-------------*/
+
+/*======================FOOTER====================*/
+footer{
+	text-align: center;
+}
+
+footer .copyrights{
+	font-family: "Roboto",sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+
+
+	clear: both;
+	margin: 20px;
+	font-weight:bolder;
+	color: #5b5b5b;
+}
+
+/*======================/FOOTER====================*/
+
+h1,h2,h3,h4,h5,h6,.h1,.h2.h3,.h4,.h5,.h6{
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,.h1,h2,.h2,h3,.h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h4,.h4,h5,.h5,h6,.h6{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1,.h1 {font-size: 36px;}
+h2,.h2 {font-size: 30px;}
+h3,.h3 {font-size: 24px;}
+h4,.h4 {font-size: 18px;}
+h5,.h5 {font-size: 14px;}
+h6,.h6 {font-size: 12px;}
+p {margin: 0 0 10px;}
+
+
+/* Випадання меню при наведенні на великих екранах */
+@media only screen and (min-width : 768px) {
+	.dropdown:hover > .dropdown-menu {
+	    display: block; 
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	#main-body .img-text h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+	}
+	#main-body .img-text a,
+	#main-body .img-text p {
+	    font-size: 20px; 
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	#main-body .img-text h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+	}
+
+	#main-body .img-text a,
+	#main-body .img-text p {
+	    font-size: 10px; 
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.nav > li > a {
+	  padding: 5px 5px;
+	  font-size: 10px;
+	  font-weight: bolder;
+	}
+
+	#footer {
+		font-size: 12px;
+	}
+
+	.pagination > li > a, .pagination > li > p {
+    font-size: 10px;
+    padding: 5px 7px;
+	}
+	h3,.h3{
+		font-size: 14px;
+		font-weight: bolder;
+	}
+	.nav-pills > li > a > .badge{
+	margin-left: 7px;
+	margin-bottom: 2px;
+	font-size: 8px;
+	}
+
+	#main-body .img-text h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+	}
+
+	#main-body .img-text a,
+	#main-body .img-text p {
+	    font-size: 10px; 
+	}
+}
